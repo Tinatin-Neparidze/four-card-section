@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --background:white;
+  --description:#4D4F62;
+  --sky:#44D3D2;
+  --red:#EA5454;
+  --blue:#549EF2;
+  --yellow:#FCAE4A;
+  
+}
+body{
+ 
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background);
+  padding: 85px 32px 78px 32px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.description{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.17px;
+  color:var(--description);
+}
+.title{
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing:0.17px ;
+  text-align: center;
+  color: var(--description);
+}
+.about{
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: var(--description);
+  margin-top: 16px;
+  opacity: 50%;
+}
+.card{
+  width: 100%;
+  background-color: var(--background);
+  padding-bottom: 28px;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px 11px rgba(131, 166, 210, 0.5);
+  text-align: left;
+  overflow: hidden;
+  
+}
+.sky{
+  margin-top: 76px;
+}
+.card-title{
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--description);
+  line-height: 30px;
+  
+
+}
+.card-description{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  opacity: 50%;
+ 
+}
+.icon{
+  margin-top: 33px;
+  width: 57px;
+  height: 57px;
+  margin-left: auto;
+}
+.border{
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--sky);
+  
+}
+.content{
+  margin-top: 27px;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+}
+.red{
+  margin-top: 25px;
+}
+.red .border{
+background-color: var(--red);
+}
+.yellow .border{
+  background-color: var(--yellow);
+}
+.blue .border{
+  background-color: var(--blue);
+}
+.yellow, .blue{
+  margin-top: 23px;
+}
+.card-container{
+  width: 100%;
+}
+@media (min-width: 768px) {
+.card{
+  width:350px;
+}
+@media (min-width:1440px){
+  .description,
+  .title{
+    font-size:36px ;
+    line-height: 54px;
+    letter-spacing: 0.45px;
+  }
+  .card{
+    height:250px;
+  }
+  .card-container{
+    display: flex;
+  }
+}
+}
